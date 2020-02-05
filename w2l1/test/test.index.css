@@ -1,0 +1,32 @@
+table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+.input-wrapper {
+    color: rgb(0, 255, 13);
+}
+
+tbody {
+    background-color: goldenrod;
+
+}
+td.bold {
+    font-weight: 700;
+}
+.nav-item .active {
+    color: rgb(255, 0, 234);
+}
+
+img {
+    width: 150px;
+    height: auto;
+    margin: auto;
+    border-style: ridge;
+    border-width: 5px;
+    border-color:rgba(0, 255, 98, 0.274);
+}
+form * {
+    box-sizing: border-box;
+    color: red  ;
+}
