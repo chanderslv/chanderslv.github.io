@@ -1,0 +1,10 @@
+div {
+    display: block;
+    background: lightgrey;
+    height: 45px;
+    width: auto;
+    padding: 0 10%;
+}
+img {
+    width: 45px;
+}

@@ -4,20 +4,15 @@ table {
 }
 
 .input-wrapper {
-    color: rgb(0, 255, 13);
+    color: rgb(47, 0, 255);
 }
 
-tbody {
-    background-color: goldenrod;
-
-}
 td.bold {
     font-weight: 700;
 }
 .nav-item .active {
     color: rgb(255, 0, 234);
 }
-
 img {
     width: 150px;
     height: auto;
@@ -28,5 +23,11 @@ img {
 }
 form * {
     box-sizing: border-box;
-    color: red  ;
+    color: lawngreen  ;
+}
+li.active.double {
+    color: greenyellow;
+}
+p {
+    color: blue;
 }
