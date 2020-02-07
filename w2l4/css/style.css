@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+nav {
+    position: fixed;
+    padding: 0 10%;
+    width: 100%;
+    height: 50px;
+    background: rgba(200, 160, 200, 0.4);
+}
+.menu {
+    float: right;
+    line-height: 50px;
+}
+.menu ul {
+    margin: 0;
+    padding: 0 20px;
+    display: none;
+    list-style: none;
+    background: rgba(200, 160, 200, 0.4);
+}
+.menu:hover ul {
+    display: block;
+}

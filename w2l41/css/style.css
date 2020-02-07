@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    background: khaki;
+    flex-wrap: wrap;
+}
+.wrapper > div {
+    width: 150px;
+    height: 150px;
+    background: red;
+}
+.wraper > div:last-child {
+    background: saddlebrown;
+
+}
+@media screen and (max-width: 720px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}

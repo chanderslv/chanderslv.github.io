@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(140, 240, 235);
+    flex-wrap: wrap;
+    align-items: center
+}
+.wrapper > div {
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin: 2%;
+}   
