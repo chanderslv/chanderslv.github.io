@@ -15,6 +15,7 @@ nav {
 .menu {
     float: right;
     line-height: 50px;
+    font-weight: bold;
 }
 .menu ul {
     margin: 0;
@@ -25,4 +26,7 @@ nav {
 }
 .menu:hover ul {
     display: block;
+}
+img {
+    height: 49px;
 }
