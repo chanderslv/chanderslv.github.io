@@ -1,8 +1,17 @@
 * {
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+    display: flex;
+    max-height: 100vh;
+}
+.aside {
+    flex-shrink: 0;
+    transition: width 0.5s;
+}
 .formbar {
-    position: absolute;
+    position: fixed;
     padding: 4% 3%;
     width: 230px;
     height: 100%;
@@ -10,8 +19,11 @@
     background: grey;
     line-height: 40px;
 }
-.form:hover  {
+.formbar label {
     display: block;
+}
+.username, .email {
+    display: inline-block;
 }
 .form {
     position: absolute;
@@ -20,8 +32,11 @@
     width: 100px;
     height: 45px;
     transform: rotate(90deg);
-    margin: 0px 0px 0px 178px;
     font-weight: bold;
+    top: 10%;
+    right: 457px;
+    border: none;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .username, .email {
@@ -29,9 +44,14 @@
 }
 
 table {
+    margin: auto;
+    display: table;
     border-collapse: collapse;
 }
   
 table, th, td {
     border: 1px solid black;
+}
+#side {
+    transform: translateX(-100%);
 }
