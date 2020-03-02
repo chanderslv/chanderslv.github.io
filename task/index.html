@@ -7,17 +7,17 @@
     <title>Document</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/scripts.js"></script>
 
     <link rel="stylesheet" href="./css/index.css">
 
 </head>
 
 <body>
-    <div class="side-wrapper">
+    <div id="side-wrapper" class="close">
         <div class="button-wrapper">
             <button class="open-form">
-                <span>Open form</span>
+                <span></span>
             </button>
         </div>
         <div class="form-wrapper">
@@ -30,7 +30,7 @@
                     <span>E-mail</span>
                     <input type="email">
                 </label>
-                <label for="check-deals">
+                <label name="check-deals">
                     <input type="checkbox">
                     <span>Send me special deals</span>
                 </label>
@@ -47,6 +47,7 @@
         </div>
     </div>
 
+
     <table id="data-table">
         <thead>
             <tr>
@@ -61,6 +62,16 @@
 
         </tbody>
     </table>
+    <div class="popup-wrapper">
+        <div class="popup-content">
+            <div class='content'>
+                <span>
+                    Thank you for Subscribing!
+                </span>
+            </div>
+            <button id="popup-btn">Close</button>
+        </div>
+    </div>
 
 </body>
 

@@ -5,38 +5,60 @@ body {
     margin: 0;
     display: flex;
     max-height: 100vh;
+    font-family: sans-serif;
 }
-.side-wrapper {
-    display: block;
+
+
+#side-wrapper {
+    position: fixed;
     width: 240px;
     height: 100vh;
     background: linear-gradient(rgb(95, 95, 95), rgb(197, 197, 197));
-    box-shadow: 0 12px 10px 5px rgba(110, 110, 110, 0.5);
+    box-shadow: 0 12px 10px 5px rgba(0, 0, 0, 0.5);
     color: #ffffff;
     line-height: 26px;
-    transform: translateX(0%);
+    transition: 0.5s; 
+    transform: translateX(-100%);
+       
 }
+#side-wrapper.open {
+    transform: translateX(0);
+}
+
 .open-form {
     position: absolute;
     width: 150px;
     height: 50px;
-    background: red;
+    background: rgba(255, 28, 28, 0.95);
     border-radius: 15px 15px 0 0;
     top: 23%;
     left: 190px;
     border: none;
     transform: rotate(90deg);
-    box-shadow: 0px -4px 3px 0px rgba(255, 0, 0, 0.5);
+    box-shadow: 0px -4px 3px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    outline: none;
 }
 .open-form span {
     display: inline-block;
     inline-size: max-content;
     font-weight: bold;
 }
+.open-form:before {
+    content: 'Open form';
+    display: inline-block;
+    inline-size: max-content;
+    font-weight: bold;
+    font-size: 18px;
+}
+.open-forma:before {
+    content: 'Close form';
+}
 .form-wrapper {
     display: block;
     padding: 20px 27px;
-    text-decoration: #ffffff
+    text-decoration: #ffffff;
+    border-radius: 6px;
 }
 #subscribe {
     display: block;
@@ -51,12 +73,43 @@ body {
     background: green
 }
 #data-table {
-    width: 50%;
+    width: 60%;
     border-collapse: collapse;
+    margin: auto;
+    border-spacing: 0;
 }
+    
+
 #data-table thead {
-    background: #a39262;
+    background: #fcedc5;
 }
 #data-table, th, td {
     border: 1px solid;
+}
+.popup-wrapper {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.popup-content {
+    display: block;
+    padding: 15px;
+    width: 350px;
+    height: 160px;
+    background-color: rgb(197, 197, 197);
+    text-align: center;
+}
+.popup-content .content {
+    padding: 30px;
+}
+.popup-content #popup-btn {
+    width: 80px;
+    margin: 9px 0px 0px 0px;
+    padding: 10px;
+    float: right;
+    cursor: pointer;
 }
