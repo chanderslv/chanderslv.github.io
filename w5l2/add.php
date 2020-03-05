@@ -1,4 +1,9 @@
 <?php
+
+use PHPUnit\Framework\TestCase;
+use CRUD\entity\User;
+
+
 require_once "./db-wrapper.php";
 
 $name = $_POST["name"];
