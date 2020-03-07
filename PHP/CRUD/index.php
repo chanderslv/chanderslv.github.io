@@ -1,13 +1,7 @@
 <?php
     require_once "./helpers/database-wrapper.php";
 
-    $db = new DBW();
-
-    $db->openConnection();
-
-    $result = $db->run("SELECT * FROM users3 LIMIT 25");
-
-    $db->closeConnection();
+    $result = DBW::run("SELECT * FROM users3 LIMIT 25");
 
 ?>
 
