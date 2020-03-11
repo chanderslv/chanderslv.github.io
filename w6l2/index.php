@@ -5,9 +5,7 @@
     $result = DB::run("SELECT name, password, id FROM users2 LIMIT 25");
    
 ?>
-<?php
 
-?>
 
 <!DOCTYPE html>
 <html lang="en">
