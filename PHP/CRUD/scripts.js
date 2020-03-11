@@ -7,5 +7,6 @@ $(function() {
             url: "/CRUD/delete.php?id=" + id + "&redirect=false"
         }).then(function() {
             console.log()
+        })
     })
-})
+});
