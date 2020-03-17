@@ -25,6 +25,6 @@ if (isset($_GET["id"])) {
 
 }
 
-require_once "./views/users.form.php"
+require_once "./views/users.form.edit.php"
 ?>
 
